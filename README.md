@@ -3,5 +3,5 @@
 A website that generate password for the user
 
 Run it with:
-## npm install
-## npm start
++ `npm install`
++ `npm start`

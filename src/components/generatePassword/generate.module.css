@@ -47,8 +47,14 @@
 }
 
 .copyPassword {
-    width: 64px;
-    height: 64px;
+    width: 48px;
+    height: 48px;
     background-image: url("./copy.png");
+    filter: hue-rotate(-80deg);
     cursor: pointer;
+    transition: transform 0.6s;
+}
+.copyPassword:hover{
+    transition: transform 0.5s;
+    transform: scale(1.075);
 }
