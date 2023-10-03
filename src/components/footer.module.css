@@ -1,0 +1,15 @@
+.footer{
+    display: flex;
+    position: fixed;
+    bottom: 32px;
+    align-items: center;
+    gap: 5px;
+}
+.footer a{
+    color: rgb(11, 157, 255);
+    text-decoration: none;
+    font-weight: 600;
+}
+.footer a:visited{
+    color: rgb(10, 132, 214);
+}
