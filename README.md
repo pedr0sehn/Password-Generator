@@ -1,6 +1,6 @@
 ### Password Generator
 
-A website that generate password for the user
+A password generator made with react to improve and apply my knowledges
 
 Run it with:
 + `npm install`
