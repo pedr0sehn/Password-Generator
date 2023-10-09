@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styles from './generate.module.css';
 
-function GeneratePassword({ letters, numbers, characters, numberOfDigits }) {
+function GeneratePassword({ letters, words, numbers, characters, numberOfDigits }) {
 
     let passwordPreferences = []
 
@@ -9,7 +9,7 @@ function GeneratePassword({ letters, numbers, characters, numberOfDigits }) {
 
     let password = ""
 
-    function copyPassword(){
+    function copyPassword() {
         navigator.clipboard.writeText(ps);
     }
 
@@ -20,7 +20,13 @@ function GeneratePassword({ letters, numbers, characters, numberOfDigits }) {
     const uLtrs = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     const lLtrs = uLtrs.toLocaleLowerCase()
     const nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-    const chr = ["!", "#", "$", "%", "&"]
+    const wrds = [
+        "coffee", "boss", "noob", "pro",
+        "god", "red", "lol", "driver",
+        "chair", "tree", "margarine", "mouse", "ballon",
+        "strange", "friend", "horse", "sun", "old"
+    ]
+    const chr = ["!", "#", "_","$", "%", "&"]
 
     function createPassword() {
 

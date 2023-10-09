@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 function App() {
 
   const [markLetter, setMarkLetter] = useState(true)
+  const [markWord, setMarkWord] = useState(false)
   const [markNumber, setMarkNumber] = useState(false)
   const [markCharacter, setMarkCharacter] = useState(false)
   const [passwordLength, setPasswordLength] = useState('16')
@@ -15,9 +16,9 @@ function App() {
   return (
     <div className="App">
       <h1>Password Generator</h1>
-      <PasswordInfo markLetter={markLetter} setMarkLetter={setMarkLetter} markNumber={markNumber} setMarkNumber={setMarkNumber} markCharacter={markCharacter} setMarkCharacter={setMarkCharacter} />
+      <PasswordInfo markLetter={markLetter} setMarkLetter={setMarkLetter} markWord={markWord} setMarkWord={setMarkWord} markNumber={markNumber} setMarkNumber={setMarkNumber} markCharacter={markCharacter} setMarkCharacter={setMarkCharacter} />
       <CountInput passwordLength={passwordLength} setPasswordLength={setPasswordLength} />
-      <GeneratePassword letters={markLetter} numbers={markNumber} characters={markCharacter} numberOfDigits={passwordLength} />
+      <GeneratePassword letters={markLetter} words={markWord} numbers={markNumber} characters={markCharacter} numberOfDigits={passwordLength} />
       <Footer />
     </div>
   );
